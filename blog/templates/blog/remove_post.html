@@ -1,0 +1,15 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <title>POST DELETE</title>
+</head>
+<body>
+    <form method="POST">
+        {% csrf_token %}
+        <h3>{{post.title}} - DELETE</h3>
+        <button>DELETE</button>
+    </form>
+</body>
+
+{% endblock %}
